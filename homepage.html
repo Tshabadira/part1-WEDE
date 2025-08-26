@@ -3,86 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!--This is a company logo and Name-->
-    <img src="#" alt="FindRes" />
+    <title>FindRes - Home</title>
 </head>
 <body>
-    <ul>
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="enquiry.html">Enquiry</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
-    </ul>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    <h2>FIND IT. BOOK IT. MOVE IN.</h2>
+    <!-- Logo and Company Name -->
+    <header>
+        
+        <h1>FindRes</h1>
+        <p>Your reliable accommodation solution for students.</p>
+    </header>
 
-    <!--This is where students will search for accomodation-->
-    <form action="/search" method="get">
-    <table border="0" Cellpadding="6" cellspacing="0">
-        <tr>
-        <td>
-    <label>University / College:</label><br>
-    <select>
-        <option>-- Any --</option>
-        <option>Central University of Technology</option>
-        <option>University of Free State</option>
-        <option>Boston College</option>
-        <option>Rosetec College</option>
-        <option>Rosebank College</option>
-    </select>
-</td>
+    <!-- Hero Section -->
+    <section>
+        <h1>FIND IT. BOOK IT. MOVE IN.</h1>
+        <p>We connect students with affordable and reliable student residences near their universities and colleges.</p>
+        <a href="services.html"><button>Find Accommodation Now</button></a>
+    </section>
 
-<td>
-    <label >Property Type</label><br>
-    <select>
-        <option>Any</option>
-        <option>Apartment</option>
-        <option>House</option>
-    </select>
-</td>
+    <!-- Search Form -->
+    <section>
+        <h3>Search for Accommodation</h3>
+        <form action="/search" method="get">
+            <label>University / College:</label>
+            <select>
+                <option>-- Any --</option>
+                <option>Central University of Technology</option>
+                <option>University of Free State</option>
+                <option>Boston College</option>
+                <option>Rosetec College</option>
+                <option>Rosebank College</option>
+            </select>
 
-<td>
-    <label>Payment Type</label><br>
-    <select>
-        <option>Any</option>
-        <option>NSFAS</option>
-        <option>Bursary</option>
-        <option>Cash</option>
-    </select>
-</td>
+            <label>Property Type:</label>
+            <select>
+                <option>Any</option>
+                <option>Apartment</option>
+                <option>House</option>
+            </select>
 
-<td>
-    <label>Max Rent</label><br>
-    <select>
-        <option>Any</option>
-        <option>R2 000</option>
-        <option>R3 000</option>
-        <option>R4 000</option>
-        <option>R5 000</option>
-        <option>R6 000</option>
-    </select>
-</td>
+            <label>Payment Type:</label>
+            <select>
+                <option>Any</option>
+                <option>NSFAS</option>
+                <option>Bursary</option>
+                <option>Cash</option>
+            </select>
 
-<td style="White-space:nowrap;">
-    <br>
-    <input type="button" value="Search" />
-</td>
-</tr>  
-</table>
-</form>
+            <label>Max Rent:</label>
+            <select>
+                <option>Any</option>
+                <option>R2 000</option>
+                <option>R3 000</option>
+                <option>R4 000</option>
+                <option>R5 000</option>
+                <option>R6 000</option>
+            </select>
 
-<!--This will show accomodation picture that are aveilable -->
-<h1>Newly listed res'es</h1>   
-<img src="#" alt="House1" height="200" width="200" />
-<img src="#" alt="House1" height="200" width="200" />
-<img src="#" alt="House1" height="200" width="200" />
-<img src="#" alt="House1" height="200" width="200" />
-<img src="#" alt="House1" height="200" width="200" />
-<img src="#" alt="House1" height="200" width="200" />
+            <button type="submit">Search</button>
+        </form>
+    </section>
 
+    <!-- New Listings -->
+    <section>
+        <h3>Newly Listed Residences</h3>
+        <img src="house1.jpg" alt="Residence 1" height="200" width="200">
+        <img src="house2.jpg" alt="Residence 2" height="200" width="200">
+        <img src="house3.jpg" alt="Residence 3" height="200" width="200">
+        <img src="house4.jpg" alt="Residence 4" height="200" width="200">
+    </section>
 
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FindRes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
