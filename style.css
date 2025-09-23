@@ -1,0 +1,55 @@
+/* Entire navbar background */
+.navbar {
+    background-color: orangered;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 30px;
+}
+
+/* Flex container for logo + nav */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu list */
+.homepage {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu items */
+.homepage li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.homepage li a:hover {
+    background-color: white;
+    color: orangered;
+}
+.slogan{
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
