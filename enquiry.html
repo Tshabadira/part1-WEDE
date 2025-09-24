@@ -4,51 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindRes - Enquiry</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation (kept same since it's global across all pages) -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">FindRes</div>
 
-    <!-- Header -->
-    <header>
+            <nav>
+                <ul class="homepage">
+                    <li><a href="homepage.html" class="nav-item">Home</a></li>
+                    <li><a href="services.html" class="nav-item">Services</a></li>
+                    <li><a href="enquiry.html" class="nav-item">Enquiry</a></li>
+                    <li><a href="aboutus.html" class="nav-item">About Us</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <header class="enquiry-page-header">
         <h1>Submit an Enquiry</h1>
         <p>Have a question or need assistance? Fill in the form below and our team will get back to you.</p>
     </header>
 
     <!-- Enquiry Form -->
-    <section>
-        <form action="#" method="post">
+    <section class="enquiry-page-section">
+        <form action="#" method="post" class="enquiry-page-form">
+            
             <!-- Personal Details -->
-            <fieldset>
+            <fieldset class="enquiry-form-group">
                 <legend>Personal Details</legend>
                 
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
 
-                <label for="university">University / College:</label><br>
-                <input type="text" id="university" name="university"><br><br>
+                <label for="university">University / College:</label>
+                <input type="text" id="university" name="university">
             </fieldset>
-            <br>
 
             <!-- Enquiry Details -->
-            <fieldset>
+            <fieldset class="enquiry-form-group">
                 <legend>Enquiry Details</legend>
                 
-                <label for="service">What are you enquiring about?</label><br>
+                <label for="service">What are you enquiring about?</label>
                 <select id="service" name="service" required>
                     <option value="">-- Select an Option --</option>
                     <option value="residences">Available Residences</option>
@@ -56,9 +63,9 @@
                     <option value="short-term">Short-Term Rentals</option>
                     <option value="long-term">Long-Term Rentals</option>
                     <option value="support">General Support</option>
-                </select><br><br>
+                </select>
 
-                <label for="budget">Estimated Budget (per month):</label><br>
+                <label for="budget">Estimated Budget (per month):</label>
                 <select id="budget" name="budget">
                     <option value="">-- Select Budget --</option>
                     <option value="2000">R2 000</option>
@@ -66,20 +73,19 @@
                     <option value="4000">R4 000</option>
                     <option value="5000">R5 000</option>
                     <option value="6000">R6 000+</option>
-                </select><br><br>
+                </select>
 
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="6" required></textarea><br><br>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
             </fieldset>
-            <br>
 
             <!-- Submit -->
-            <button type="submit">Submit Enquiry</button>
+            <button type="submit" class="enquiry-page-btn">Submit Enquiry</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="enquiry-footer">
         <p>&copy; 2025 FindRes. All rights reserved.</p>
     </footer>
 </body>

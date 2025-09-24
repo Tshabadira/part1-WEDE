@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindRes - Services</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
+    <header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">FindRes</div>
+
     <nav>
-        <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <ul class="homepage">
+        <li><a href="homepage.html" class="nav-item">Home</a></li>
+        <li><a href="services.html" class="nav-item">Services</a></li>
+        <li><a href="enquiry.html" class="nav-item">Enquiry</a></li>
+        <li><a href="aboutus.html" class="nav-item">About Us</a></li>
+        <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+      </ul>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Our Services</h1>
-        <p>Helping students find safe, affordable, and reliable residences with ease.</p>
-    </header>
+  </div>
+</header>
 
-    <!-- Services Section -->
-    <section>
-        <h2>What We Offer</h2>
-        <article>
+   <!-- Header -->
+<header class="services-header">
+    <h1>Our Services</h1>
+    <p>Helping students find safe, affordable, and reliable residences with ease.</p>
+</header>
+
+<!-- Services Section -->
+<section class="services-section">
+    <h2 class="section-title">What We Offer</h2>
+    
+    <div class="services-container">
+        <article class="service-card">
             <h3>Student Residence Listings</h3>
             <p>
                 We provide an up-to-date database of residences near universities and colleges. 
@@ -34,7 +44,7 @@
             </p>
         </article>
 
-        <article>
+        <article class="service-card">
             <h3>Verified & NSFAS-Approved Accommodation</h3>
             <p>
                 Our platform lists only verified properties and NSFAS-approved residences. 
@@ -42,7 +52,7 @@
             </p>
         </article>
 
-        <article>
+        <article class="service-card">
             <h3>Flexible Rental Options</h3>
             <p>
                 Whether you need short-term housing for a semester or a long-term stay for your entire degree, 
@@ -50,7 +60,7 @@
             </p>
         </article>
 
-        <article>
+        <article class="service-card">
             <h3>Easy Online Booking</h3>
             <p>
                 With our simple booking process, students can search, compare, and secure accommodation online 
@@ -58,23 +68,25 @@
             </p>
         </article>
 
-        <article>
+        <article class="service-card">
             <h3>24/7 Support</h3>
             <p>
                 Our dedicated support team is always ready to assist with enquiries, booking issues, or 
                 any questions related to your student housing needs.
             </p>
         </article>
-    </section>
+    </div>
+</section>
 
-    <!-- Call to Action -->
-    <section>
-        <h2>Start Your Search Today</h2>
-        <p>
-            Finding a place to stay has never been easier. Explore our listings now and secure your next student home.
-        </p>
-        <a href="enquiry.html"><button>Make an Enquiry</button></a>
-    </section>
+<!-- Call to Action -->
+<section class="cta-section">
+    <h2>Start Your Search Today</h2>
+    <p>
+        Finding a place to stay has never been easier. Explore our listings now and secure your next student home.
+    </p>
+    <a href="enquiry.html"><button class="button2">Make an Enquiry</button></a>
+</section>
+
 
     <!-- Footer -->
     <footer>
