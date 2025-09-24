@@ -53,3 +53,72 @@
     justify-content: center;
     margin-top: 50px;
 }
+.slogan2{
+    justify-content: center;
+    display: flex;
+    font-size: medium;
+    color: orangered;
+}
+.search{
+    justify-content: center;
+    display: flex;
+    color: orangered;
+
+}
+/* Search Bar Styling */
+.search-container {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 8px;
+}
+
+.search-container select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 180px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container select:focus {
+  border: 1px solid #ff6600;
+  box-shadow: 0 0 6px hsla(24, 95%, 48%, 0.863);
+  outline: none;
+}
+
+.search-container button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-container button:hover {
+  background: #e65500;
+  transform: scale(1.05);
+}
+.residences{
+    color: orangered;
+    justify-content: center;
+    display: flex;
+    
+}
+
