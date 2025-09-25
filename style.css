@@ -253,7 +253,7 @@
     background: #cc3300;
     transform: scale(1.05);
 }
-
+  
 /* Header Section */
 .enquiry-page-header {
     text-align: center;
@@ -358,6 +358,9 @@
     background: #f2f2f2;
     padding: 15px;
     color: #333;
+}
+.picture{
+    color: orangered;
 }
 
 
