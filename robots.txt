@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://findres.co.za/sitemap.xml
+
+# Directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Files
+Disallow: /private-file.html
+Disallow: /secret-page.html

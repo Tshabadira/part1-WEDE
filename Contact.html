@@ -4,34 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindRes - Contact Us</title>
+    <meta name="description" content="Contact FindRes for student accommodation assistance. Email, phone and contact form available.">
+    <meta name="keywords" content="student accommodation, Bloemfontein, NSFAS housing, student residences, university housing, FindRes, contact student housing">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-     <header class="navbar">
-  <div class="navbar-container">
-    <div class="logo">FindRes</div>
-
-    <nav>
-      <ul class="homepage">
-        <li><a href="homepage.html" class="nav-item">Home</a></li>
-        <li><a href="services.html" class="nav-item">Services</a></li>
-        <li><a href="enquiry.html" class="nav-item">Enquiry</a></li>
-        <li><a href="aboutus.html" class="nav-item">About Us</a></li>
-        <li><a href="contact.html" class="nav-item">Contact Us</a></li>
-      </ul>
-    </nav>
-
-  </div>
-</header>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">FindRes</div>
+            <nav>
+                <ul class="homepage">
+                    <li><a href="homepage.html" class="nav-item">Home</a></li>
+                    <li><a href="services.html" class="nav-item">Services</a></li>
+                    <li><a href="enquiry.html" class="nav-item">Enquiry</a></li>
+                    <li><a href="aboutus.html" class="nav-item">About Us</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- Header -->
     <header>
         <h1 class="slogan">Contact Us</h1>
-        <p class="slogan">We’d love to hear from you! Use the details below or send us a direct message.</p>
+        <p class="slogan">We'd love to hear from you! Use the details below or send us a direct message.</p>
     </header>
 
-    <!-- Contact Section -->
+    <!-- Contact Form Section -->
+    <section class="enquiry-page-section">
+        <form action="#" method="post" class="enquiry-page-form" id="contactForm">
+            <fieldset class="enquiry-form-group">
+                <legend>Contact Information</legend>
+                
+                <label for="contactName">Full Name:</label>
+                <input type="text" id="contactName" name="name" required>
+
+                <label for="contactEmail">Email Address:</label>
+                <input type="email" id="contactEmail" name="email" required>
+
+                <label for="contactPhone">Phone Number:</label>
+                <input type="tel" id="contactPhone" name="phone" placeholder="083 123 4567">
+
+                <label for="contactSubject">Subject:</label>
+                <input type="text" id="contactSubject" name="subject" required>
+
+                <label for="contactMessage">Your Message:</label>
+                <textarea id="contactMessage" name="message" rows="6" required placeholder="Please enter your message here..."></textarea>
+            </fieldset>
+
+            <button type="submit" class="enquiry-page-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Contact Information & Map -->
     <section>
         <table width="100%" cellpadding="15">
             <tr>
@@ -40,9 +66,21 @@
                     <h2 class="slogan">Get in Touch</h2>
                     <p class="slogan"><strong>Email:</strong> info@findres.com</p>
                     <p class="slogan"><strong>Phone:</strong> +067 871 7944</p>
-                    <p class="slogan"><strong>Address:</strong> <br> Bloemfontein,<br> South Africa</p>
+                    <p class="slogan"><strong>Address:</strong> <br> 123 University Road<br>Bloemfontein Central<br>9301, South Africa</p>
+                    
+                    <h3 class="slogan" style="margin-top: 2rem;">Office Hours</h3>
+                    <p class="slogan">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p class="slogan">Saturday: 9:00 AM - 1:00 PM</p>
+                    <p class="slogan">Sunday: Closed</p>
                 </td>
                 
+                <!-- Right Column: Map -->
+                <td width="60%" valign="top">
+                    <h2 class="slogan">Our Location</h2>
+                    <div id="map" style="height: 400px; width: 100%; margin: 1rem 0; border-radius: 10px; overflow: hidden;"></div>
+                    <p class="slogan" style="text-align: center; margin-top: 1rem;">Find us in Bloemfontein Central, near major universities and colleges</p>
+                </td>
+            </tr>
         </table>
     </section>
 
@@ -50,5 +88,7 @@
     <footer class="enquiry-footer">
         <p>&copy; 2025 FindRes. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
