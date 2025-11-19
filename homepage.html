@@ -3,90 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FindRes - Home</title>
+    <title>FindRes - Student Accommodation in Bloemfontein</title>
+    <meta name="description" content="FindRes connects students with affordable, NSFAS-approved accommodation near universities and colleges in Bloemfontein. Search, compare and book student residences easily.">
+    <meta name="keywords" content="student accommodation, Bloemfontein, NSFAS housing, student residences, university housing, FindRes">
     <link rel="stylesheet" href="style.css">
-    
-<meta name="keywords" content="student accommodation, Bloemfontein, NSFAS housing, student residences, university housing, FindRes">
 </head>
 <body>
     <!-- Navigation Menu -->
     <header class="navbar">
-  <div class="navbar-container">
-    <div class="logo">FindRes</div>
-
-    <nav>
-      <ul class="homepage">
-        <li><a href="homepage.html" class="nav-item">Home</a></li>
-        <li><a href="services.html" class="nav-item">Services</a></li>
-        <li><a href="enquiry.html" class="nav-item">Enquiry</a></li>
-        <li><a href="aboutus.html" class="nav-item">About Us</a></li>
-        <li><a href="contact.html" class="nav-item">Contact Us</a></li>
-      </ul>
-    </nav>
-
-  </div>
-</header>
+        <div class="navbar-container">
+            <div class="logo">FindRes</div>
+            <nav>
+                <ul class="homepage">
+                    <li><a href="homepage.html" class="nav-item">Home</a></li>
+                    <li><a href="services.html" class="nav-item">Services</a></li>
+                    <li><a href="enquiry.html" class="nav-item">Enquiry</a></li>
+                    <li><a href="aboutus.html" class="nav-item">About Us</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section>
-
-
         <h1 class="slogan">FIND IT. BOOK IT. MOVE IN.</h1>
         <p class="slogan2">We connect students with affordable and reliable student residences near their universities and colleges.</p>
-        
     </section>
 
     <!-- Search Form -->
     <section>
         <h3 class="search">Search for Accommodation</h3>
-        <form action="/search" method="get" class="search-container">
+        <form action="search-results.html" method="get" class="search-container" id="searchForm">
             <label>University / College:</label>
-            <select>
-                <option>-- Any --</option>
-                <option>Central University of Technology</option>
-                <option>University of Free State</option>
-                <option>Boston College</option>
-                <option>Rosetec College</option>
-                <option>Rosebank College</option>
+            <select name="university" required>
+                <option value="">-- Any --</option>
+                <option value="cut">Central University of Technology</option>
+                <option value="ufs">University of Free State</option>
+                <option value="boston">Boston College</option>
+                <option value="rosetec">Rosetec College</option>
+                <option value="rosebank">Rosebank College</option>
             </select>
 
             <label>Property Type:</label>
-            <select>
-                <option>Any</option>
-                <option>Apartment</option>
-                <option>House</option>
+            <select name="propertyType">
+                <option value="any">Any</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
             </select>
 
             <label>Payment Type:</label>
-            <select>
-                <option>Any</option>
-                <option>NSFAS</option>
-                <option>Bursary</option>
-                <option>Cash</option>
+            <select name="paymentType">
+                <option value="any">Any</option>
+                <option value="nsfas">NSFAS</option>
+                <option value="bursary">Bursary</option>
+                <option value="cash">Cash</option>
             </select>
 
             <label>Max Rent:</label>
-            <select>
-                <option>Any</option>
-                <option>R2 000</option>
-                <option>R3 000</option>
-                <option>R4 000</option>
-                <option>R5 000</option>
-                <option>R6 000</option>
+            <select name="maxRent">
+                <option value="any">Any</option>
+                <option value="2000">R2 000</option>
+                <option value="3000">R3 000</option>
+                <option value="4000">R4 000</option>
+                <option value="5000">R5 000</option>
+                <option value="6000">R6 000</option>
             </select>
 
             <button type="submit">Search</button>
         </form>
+        <div id="search-results" class="search-results-container"></div>
     </section>
 
-   <!-- New Listings -->
-<section>
-    <h2 class="residences">Newly Listed Residences</h2>
-
-    <!-- Added container here -->
-    <div class="residences-container">
-
-        <a href="res1.html">
+    <!-- New Listings -->
+    <section>
+        <h2 class="residences">Newly Listed Residences</h2>
+        <div class="residences-container">
+            <a href="res1.html">
             <img src="https://th.bing.com/th/id/R.c8041742884b502d250da75be9a4729f?rik=d7YnUgK%2fJHFw6Q&riu=http%3a%2f%2fcms.studentaccommodation.co.za%2fimages%2fListingImages%2for_f859bead4017482d86c61d4f35b90337.jpg&ehk=ZKLUEmg%2bKyR4Wy8tbrbyI1W8HxZCmlYafxeSr8W3S3E%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" 
                  alt="Residence 1" class="res-card">
         </a>
@@ -102,11 +95,8 @@
         <a href="house2.html">
             <img src="https://tse1.mm.bing.net/th/id/OIP.JGP7c8D4u7cruGYZoZi_SAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Residence 4" class="res-card">
         </a>
-
-    </div>
-    <!-- Container ends here -->
-</section>
-
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="enquiry-footer">

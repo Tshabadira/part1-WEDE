@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FindRes - Enquiry</title>
+    <title>Submit Enquiry - FindRes Student Accommodation</title>
+    <meta name="description" content="Submit your student accommodation enquiry to FindRes. Get assistance with NSFAS housing, residence availability, and rental options in Bloemfontein.">
+    <meta name="keywords" content="student accommodation, Bloemfontein, NSFAS housing, student residences, university housing, FindRes">
     <link rel="stylesheet" href="style.css">
-    
-<meta name="keywords" content="student accommodation, Bloemfontein, NSFAS housing, student residences, university housing, FindRes">
 </head>
 <body>
-    <!-- Navigation (kept same since it's global across all pages) -->
+    <!-- Navigation -->
     <header class="navbar">
         <div class="navbar-container">
             <div class="logo">FindRes</div>
-
             <nav>
                 <ul class="homepage">
                     <li><a href="homepage.html" class="nav-item">Home</a></li>
@@ -34,7 +33,7 @@
 
     <!-- Enquiry Form -->
     <section class="enquiry-page-section">
-        <form action="#" method="post" class="enquiry-page-form">
+        <form action="enquiry-success.html" method="post" class="enquiry-page-form" id="enquiryForm">
             
             <!-- Personal Details -->
             <fieldset class="enquiry-form-group">
@@ -78,14 +77,13 @@
                 </select>
 
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your accommodation needs..."></textarea>
             </fieldset>
 
             <!-- Submit -->
             <button type="submit" class="enquiry-page-btn">Submit Enquiry</button>
         </form>
     </section>
-    
 
     <!-- Footer -->
     <footer class="enquiry-footer">
